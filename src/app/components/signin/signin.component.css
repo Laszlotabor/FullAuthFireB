@@ -1,0 +1,164 @@
+/* General container styling */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+/* Box styling */
+.auth-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.auth-box h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Input fields */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Error messages */
+.error-msg {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Password visibility toggle */
+.password-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 40px;
+    /* Make space for the toggle button */
+}
+
+.password-wrapper button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #6e8efb;
+    border: none;
+    /* Remove border */
+    background: none;
+    /* Remove background */
+    padding: 0;
+    /* Remove padding */
+    outline: none;
+    /* Remove outline on focus */
+}
+
+/* Button hover effect */
+.password-wrapper button:hover {
+    color: #5a7bea;
+    /* Change color on hover */
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    background: #6e8efb;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #5a7bea;
+}
+
+/* Links */
+.switch-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.switch-link a {
+    color: #6e8efb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+/* Logged-in message */
+.logged-in-msg {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Password Strength Indicator */
+.password-strength {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    height: 5px;
+    width: 100%;
+    background-color: #e0e0e0;
+}
+
+/* Weak password */
+.weak {
+    color: red;
+}
+
+/* Medium password */
+.medium {
+    color: orange;
+}
+
+/* Strong password */
+.strong {
+    color: green;
+}
+
+/* Form input alignment and spacing */
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+/* Password strength and password field spacing */
+.password-strength>div {
+    height: 100%;
+    background-color: #e0e0e0;
+}

@@ -1,0 +1,60 @@
+/* home.component.css */
+
+/* Full height and centered background image */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Vollkorn SC", serif;
+    height: 100vh;
+    background-image: url('https://pallascats.org/wp-content/uploads/2017/08/4-1-1024x683.jpg');
+    /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Overlay for text readability */
+
+
+/* Home content card */
+.home-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    font-family: "Vollkorn SC", serif;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent background for text */
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.home-content h1 {
+    font-family: "Vollkorn SC", serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.home-content button {
+    background-color: #6e8efb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-content button:hover {
+    background-color: #5a7bea;
+}

@@ -1,0 +1,27 @@
+<div class="auth-test">
+  <h2>Test Authentication</h2>
+
+  <!-- Display current user -->
+  <div *ngIf="user$ | async as user; else loginForm">
+    <h3>Welcome, {{ user.email }}</h3>
+    <button (click)="logout()">Logout</button>
+  </div>
+
+  <!-- Login form -->
+  <ng-template #loginForm>
+    <h3>Login</h3>
+    <input
+      type="email"
+      [(ngModel)]="email"
+      placeholder="Email"
+      required
+    />
+    <input
+      type="password"
+      [(ngModel)]="password"
+      placeholder="Password"
+      required
+    />
+   <button (click)="login()" type="button" class="btn btn-info">login</button>
+  </ng-template>
+</div>
