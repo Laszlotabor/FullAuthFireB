@@ -8,7 +8,10 @@
       <ul class="navbar-nav">
 
         <li *ngIf="user$ | async as user" class="nav-item">
-          <a class="nav-link active" routerLink="/">Home</a>  <!-- Use Angular routerLink -->
+          <a class="nav-link" routerLink="/home">Home</a>  <!-- Use Angular routerLink -->
+        </li>
+        <li *ngIf="user$ | async as user" class="nav-item">
+          <a class="nav-link" routerLink="/manul">manul</a>  <!-- Use Angular routerLink -->
         </li>
 
         <!-- Show Log In & Sign In if user is NOT logged in -->

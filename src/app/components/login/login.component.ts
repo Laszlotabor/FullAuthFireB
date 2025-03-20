@@ -52,7 +52,7 @@ export class LoginComponent {
     this.authService.signInWithGoogle().subscribe({
       next: () => {
         console.log('Successfully signed in with Google');
-        this.router.navigate(['/']);
+        this.router.navigate(['/home']);
       },
       error: (err) => {
         console.error('Error signing in with Google:', err);
