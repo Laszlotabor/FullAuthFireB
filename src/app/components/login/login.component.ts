@@ -40,7 +40,7 @@ export class LoginComponent {
       next: () => {
         console.log('Logged in successfully');
         this.clearInputs(); // Reset fields after login
-        this.router.navigate(['/']); // Redirect to home page
+        this.router.navigate(['/home']); // Redirect to home page
       },
       error: (error) => {
         console.error('Error logging in: ', error);
